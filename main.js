@@ -18,3 +18,10 @@ var keyValue = function(key, value){
 };
 
 console.log('keyValue: ', keyValue('city', 'Denver'));
+
+var negativeIndex = function(arr, num){
+  return arr.slice(num)[0];
+};
+
+console.log('negativeIndex: ', negativeIndex(['a', 'b', 'c', 'd', 'e'], -2));
+console.log('negativeIndex: ', negativeIndex(['jerry', 'sarah', 'sally'], -1));
