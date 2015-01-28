@@ -22,8 +22,12 @@ var removeM = function(str){
   }).join('');
 };
 
-var printObject = function(){
-
+var printObject = function(obj){
+  var key, str = '';
+  for (key in obj) {
+    str += '\n' + key + ' is ' + obj[key];
+  }
+  return str;
 };
 
 var Vowels = function(){
