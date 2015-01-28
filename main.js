@@ -30,8 +30,10 @@ var printObject = function(obj){
   return str;
 };
 
-var Vowels = function(){
-
+var Vowels = function(str){
+  return str.split('').filter(function (val) {
+    return val.match(/[aieou]/);
+  });
 };
 
 var Twins = function(){
