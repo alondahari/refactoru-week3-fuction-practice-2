@@ -25,3 +25,11 @@ var negativeIndex = function(arr, num){
 
 console.log('negativeIndex: ', negativeIndex(['a', 'b', 'c', 'd', 'e'], -2));
 console.log('negativeIndex: ', negativeIndex(['jerry', 'sarah', 'sally'], -1));
+
+// var log = function(){
+//   console.dir(f.prototype);
+//   var f = Array.prototype.shift.apply(arguments);
+//   console.log(f.prototype + ': ', f.apply(f, arguments));
+// };
+//
+// log(negativeIndex, ['a', 'b', 'c', 'd', 'e'], -2);
