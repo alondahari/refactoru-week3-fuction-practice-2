@@ -36,8 +36,10 @@ var Vowels = function(str){
   });
 };
 
-var Twins = function(){
-
+var Twins = function(arr){
+  return arr.every(function(val, i, arr){
+    return (i%2 === 0) ? (val == arr[i+1]) : true;
+  });
 };
 
 var or = function(){
