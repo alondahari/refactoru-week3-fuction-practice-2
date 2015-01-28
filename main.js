@@ -10,3 +10,11 @@ var totalLetters = function(arr){
 
 console.log('totalLetters: ', totalLetters(['javascript', 'is', 'awesome']));
 console.log('totalLetters: ', totalLetters(['what', 'happened', 'to', 'my', 'function']));
+
+var keyValue = function(key, value){
+  var obj = {};
+  obj[key] = value;
+  return obj;
+};
+
+console.log('keyValue: ', keyValue('city', 'Denver'));
