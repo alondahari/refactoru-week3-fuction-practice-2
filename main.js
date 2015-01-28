@@ -42,13 +42,26 @@ var Twins = function(arr){
   });
 };
 
-var or = function(){
-
+var or = function(arr){
+  return arr.some(function(val){return val;});
 };
 
+function includes(arr, val) {
+  return arr.some(function (value, i) {
+    return value === val;
+  });
+}
 
-var unique = function(){
-
+var unique = function(arr){
+  var cache = [];
+  return arr.filter(function (val, i) {
+    if (includes(cache, val)) {
+      return false;
+    } else {
+      cache.push(val);
+      return true;
+    }
+  });
 };
 
 // tests
