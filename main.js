@@ -55,12 +55,8 @@ function includes(arr, val) {
 var unique = function(arr){
   var cache = [];
   return arr.filter(function (val, i) {
-    if (includes(cache, val)) {
-      return false;
-    } else {
-      cache.push(val);
-      return true;
-    }
+    // .push returns new array length which evaluates to true
+    return !includes(cache, val) ? cache.push(val) : false;
   });
 };
 
